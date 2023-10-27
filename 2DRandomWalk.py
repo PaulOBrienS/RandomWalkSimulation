@@ -38,7 +38,7 @@ def run2dRandomWalk(steps: int, initialxPos: int, initialyPos: int, visualize: b
             plt.title("2D Random Walk")
             plt.axis("equal")
             plt.legend()
-            plt.savefig(fname = f"2DRandomWalkVisSimulation{simRepNumber}.png")
+            plt.savefig(fname = f"2DRandomWalkVisSimulation{simRepNumber + 1}.png")
 
 if __name__ == "__main__":
-    run2dRandomWalk(100,0,0, False, 1)
+    run2dRandomWalk(100,0,0, True, 100)
